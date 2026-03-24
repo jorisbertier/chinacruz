@@ -1,0 +1,202 @@
+{
+    "products": [
+        {
+            "id": 1,
+            "product_code": "CH-SNK-01",
+            "name": "Zapatillas Urbanas Pro Black",
+            "category": "Calzado",
+            "subcategory": "Sneakers",
+            "price": 89.99,
+            "discount_price": 65.00,
+            "description": "Zapatillas de diseño moderno con suela ergonómica.",
+            "images": [
+                "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=600",
+                "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?w=600"
+            ]
+        },
+        {
+            "id": 2,
+            "product_code": "CH-WAT-02",
+            "name": "Reloj Minimalista Cuarzo",
+            "category": "Accesorios",
+            "subcategory": "Relojes",
+            "price": 125.00,
+            "discount_price": null,
+            "images": [
+                "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=600",
+                "https://images.unsplash.com/photo-1522312346375-d1a52e2b99b3?w=600"
+            ]
+        },
+        {
+            "id": 3,
+            "product_code": "CH-AUD-03",
+            "name": "Auriculares Bluetooth Max",
+            "category": "Electrónica",
+            "subcategory": "Audio",
+            "price": 199.90,
+            "discount_price": 149.00,
+            "images": [
+                "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=600",
+                "https://images.unsplash.com/photo-1583339734035-7d5691f1a09d?w=600"
+            ]
+        },
+        {
+            "id": 4,
+            "product_code": "CH-BAG-04",
+            "name": "Mochila Impermeable Tech",
+            "category": "Accesorios",
+            "subcategory": "Bolsos",
+            "price": 55.00,
+            "discount_price": 45.00,
+            "images": [
+                "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=600",
+                "https://images.unsplash.com/photo-1622560480605-d83c853bc5c3?w=600"
+            ]
+        },
+        {
+            "id": 5,
+            "product_code": "CH-CAM-05",
+            "name": "Cámara de Acción 4K Pro",
+            "category": "Electrónica",
+            "subcategory": "Fotografía",
+            "price": 250.00,
+            "discount_price": 210.00,
+            "images": [
+                "https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?w=600"
+            ]
+        },
+        {
+            "id": 6,
+            "product_code": "CH-GOL-06",
+            "name": "Gafas de Sol Aviador",
+            "category": "Accesorios",
+            "subcategory": "Gafas",
+            "price": 45.00,
+            "discount_price": null,
+            "images": [
+                "https://images.unsplash.com/photo-1572635196237-14b3f281503f?w=600"
+            ]
+        },
+        {
+            "id": 7,
+            "product_code": "CH-TSH-07",
+            "name": "Camiseta Algodón Premium",
+            "category": "Ropa",
+            "subcategory": "Camisetas",
+            "price": 29.99,
+            "discount_price": 19.99,
+            "images": [
+                "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=600"
+            ]
+        },
+        {
+            "id": 8,
+            "product_code": "CH-KEY-08",
+            "name": "Teclado Mecánico RGB",
+            "category": "Electrónica",
+            "subcategory": "Gaming",
+            "price": 110.00,
+            "discount_price": 85.00,
+            "images": [
+                "https://images.unsplash.com/photo-1511467687858-23d96c32e4ae?w=600"
+            ]
+        },
+        {
+            "id": 9,
+            "product_code": "CH-BOT-09",
+            "name": "Botella Térmica Sport",
+            "category": "Hogar",
+            "subcategory": "Deportes",
+            "price": 25.00,
+            "discount_price": null,
+            "images": [
+                "https://images.unsplash.com/photo-1602143399827-bd959517b500?w=600"
+            ]
+        },
+        {
+            "id": 10,
+            "product_code": "CH-LMP-10",
+            "name": "Lámpara Escritorio LED",
+            "category": "Hogar",
+            "subcategory": "Decoración",
+            "price": 49.00,
+            "discount_price": 35.00,
+            "images": [
+                "https://images.unsplash.com/photo-1534073828943-f801091bb18c?w=600"
+            ]
+        },
+        {
+            "id": 11,
+            "product_code": "CH-SND-11",
+            "name": "Sandalias Trekking Terra",
+            "category": "Calzado",
+            "subcategory": "Outdoor",
+            "price": 75.00,
+            "discount_price": 55.00,
+            "images": [
+                "https://images.unsplash.com/photo-1562183241-b937e95585b6?w=600"
+            ]
+        },
+        {
+            "id": 12,
+            "product_code": "CH-TAB-12",
+            "name": "Tablet Pro Vision 11\"",
+            "category": "Electrónica",
+            "subcategory": "Computación",
+            "price": 499.00,
+            "discount_price": 420.00,
+            "images": [
+                "https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?w=600"
+            ]
+        },
+        {
+            "id": 13,
+            "product_code": "CH-WLT-13",
+            "name": "Cartera Cuero Genuino",
+            "category": "Accesorios",
+            "subcategory": "Carteras",
+            "price": 39.00,
+            "discount_price": null,
+            "images": [
+                "https://images.unsplash.com/photo-1627123424574-724758594e93?w=600"
+            ]
+        },
+        {
+            "id": 14,
+            "product_code": "CH-STK-14",
+            "name": "Set de Altavoces Surround",
+            "category": "Electrónica",
+            "subcategory": "Audio",
+            "price": 180.00,
+            "discount_price": 150.00,
+            "images": [
+                "https://images.unsplash.com/photo-1545454675-3531b543be5d?w=600"
+            ]
+        },
+        {
+            "id": 15,
+            "product_code": "CH-JKT-15",
+            "name": "Chaqueta Cortavientos Sky",
+            "category": "Ropa",
+            "subcategory": "Abrigos",
+            "price": 95.00,
+            "discount_price": 79.00,
+            "images": [
+                "https://images.unsplash.com/photo-1591047139829-d91aecb6caea?w=600"
+            ]
+        },
+        {
+            "id": 16,
+            "product_code": "CH-PRT-16",
+            "name": "Pantalones Cargo Flex",
+            "category": "Electrónica",
+            "subcategory": "Pantalones",
+            "price": 49.99,
+            "discount_price": 39.99,
+            "description": "Pantalones cargo con múltiples bolsillos y tejido elástico.",
+            "images": [
+                "https://images.unsplash.com/photo-1521334884684-d80222895322?w=600"
+            ]
+        }
+    ]
+}
