@@ -4,7 +4,6 @@ import Categories from './pages/Categories';
 import Contact from './pages/Contact';
 import Cart from './pages/Cart';
 import './App.css';
-import Home from './pages/Home';
 import CategoryDetail from './pages/CategoryDetail';
 import ScrollToTop from './components/ScrollTop';
 import { CartProvider } from './context/CartContext';
@@ -17,7 +16,7 @@ function App() {
           <ScrollToTop />
           <Routes>
 
-            <Route path="/" element={<Home />} />
+            <Route path="/" element={<Categories />} />
             <Route path="/categories" element={<Categories />} />
             <Route path="/categories/:categoryName" element={<CategoryDetail />} />
             <Route path="/cart" element={<Cart />} />

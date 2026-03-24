@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import BannerCarousel from '../components/BannerCarousel';
 
 const categories = [
     { id: 1, name: 'Electrónica', img: 'https://images.unsplash.com/photo-1498049794561-7780e7231661?w=500', grid: 'md:col-span-2 md:row-span-2' },
@@ -10,6 +11,9 @@ const categories = [
 const Categories = () => {
     return (
         <section className="py-20 px-6 max-w-7xl mx-auto">
+        <div>
+            <BannerCarousel />
+        </div>
         <div className="mb-12">
             <h2 className="text-4xl font-black text-gray-900 uppercase tracking-tighter">Explora <span className="text-orange-cruz">el catálogo</span></h2>
             <p className="text-gray-500 mt-2">Encuentra exactamente lo que buscas.</p>
