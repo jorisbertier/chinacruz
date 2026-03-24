@@ -37,7 +37,6 @@ const SwiperNavButtons = () => {
     );
 };
 
-// --- COMPOSANT CARROUSEL PRINCIPAL ---
 const BannerCarousel = () => {
     const slides = [
         { id: 1, title: '', img: carousel1 },
@@ -46,7 +45,7 @@ const BannerCarousel = () => {
     ];
 
     return (
-        <div className="w-full max-w-6xl mx-auto px-4 py-4">
+        <div className="w-full mx-auto mb-10">
         <div className="relative rounded-[2rem] overflow-hidden shadow-2xl border border-white/10">
             <Swiper
             modules={[Pagination, Autoplay, Navigation]}
@@ -59,7 +58,7 @@ const BannerCarousel = () => {
             style={{
                 "--swiper-pagination-color": "#000",
             }}
-            className="w-full h-[350px] md:h-[400px]"
+            className="w-full h-auto"
             >
             {slides.map((slide) => (
                 <SwiperSlide key={slide.id}>
@@ -67,7 +66,7 @@ const BannerCarousel = () => {
                     <img 
                     src={slide.img} 
                     alt={slide.title}
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-cover max-h-[500px]"
                     />
                     <div className="absolute inset-0 bg-gradient-to-r from-black/10 to-transparent flex items-center px-16">
                     <div className="max-w-xl">
