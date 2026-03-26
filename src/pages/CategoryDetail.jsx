@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { ArrowLeft } from 'lucide-react';
 import data from '../data/products.json';
-import ProductCard from "../components/Productcard.jsx";
+import ProductCard from "../components/ProductCard";
 
 const CategoryDetail = () => {
     const { categoryName } = useParams();
