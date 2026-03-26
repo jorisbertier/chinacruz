@@ -7,6 +7,7 @@ import './App.css';
 import CategoryDetail from './pages/CategoryDetail';
 import ScrollToTop from './components/ScrollTop';
 import { CartProvider } from './context/CartContext';
+import ProductDetail from './pages/ProductDetail';
 
 function App() {
   return (
@@ -19,6 +20,8 @@ function App() {
             <Route path="/" element={<Categories />} />
             <Route path="/categories" element={<Categories />} />
             <Route path="/categories/:categoryName" element={<CategoryDetail />} />
+            <Route path="/categories/:categoryName/:productCode" element={<ProductDetail />} />
+            <Route path="/product/:productCode" element={<ProductDetail />} />
             <Route path="/cart" element={<Cart />} />
             <Route path="/contact" element={<Contact />} />
             
