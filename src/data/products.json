@@ -198,5 +198,20 @@
                 "https://images.unsplash.com/photo-1521334884684-d80222895322?w=600"
             ]
         }
+        ,
+        {
+            "id": 17,
+            "product_code": "CH-PRT-17",
+            "name": "Pantalones Cargo Flex",
+            "category": "Test",
+            "subcategory": "Test",
+            "price": 49.99,
+            "discount_price": 39.99,
+            "description": "Pantalones cargo con múltiples bolsillos y tejido elástico.",
+            "images": [
+                "https://images.unsplash.com/photo-1521334884684-d80222895322?w=600",
+                ""
+            ]
+        }
     ]
 }

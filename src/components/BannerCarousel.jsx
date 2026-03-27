@@ -14,25 +14,25 @@ const SwiperNavButtons = () => {
 
     return (
         <div className="hidden md:block">
-        <button 
-            onClick={() => swiper.slidePrev()} 
-            className={`${buttonStyle} left-6 cursor-pointer`}
-            aria-label="Diapositive précédente"
-        >
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="#000" className="w-5 h-5">
-            <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
-            </svg>
-        </button>
+            <button 
+                onClick={() => swiper.slidePrev()} 
+                className={`${buttonStyle} left-6 cursor-pointer`}
+                aria-label="Diapositive précédente"
+            >
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="#000" className="w-5 h-5">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+                </svg>
+            </button>
 
-        <button 
-            onClick={() => swiper.slideNext()} 
-            className={`${buttonStyle} right-6 cursor-pointer`}
-            aria-label="Diapositive suivante"
-        >
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="#000" className="w-5 h-5">
-            <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
-            </svg>
-        </button>
+            <button 
+                onClick={() => swiper.slideNext()} 
+                className={`${buttonStyle} right-6 cursor-pointer`}
+                aria-label="Diapositive suivante"
+            >
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="#000" className="w-5 h-5">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                </svg>
+            </button>
         </div>
     );
 };
@@ -46,45 +46,45 @@ const BannerCarousel = () => {
 
     return (
         <div className="w-full mx-auto mb-10">
-        <div className="relative rounded-[2rem] overflow-hidden shadow-2xl border border-white/10">
-            <Swiper
-            modules={[Pagination, Autoplay, Navigation]}
-            spaceBetween={0}
-            slidesPerView={1}
-            // navigation={true}
-            pagination={{ clickable: true }}
-            autoplay={{ delay: 5000, disableOnInteraction: false }}
-            loop={true}
-            style={{
-                "--swiper-pagination-color": "#000",
-            }}
-            className="w-full h-auto"
-            >
-            {slides.map((slide) => (
-                <SwiperSlide key={slide.id}>
-                <div className="relative w-full h-full">
-                    <img 
-                    src={slide.img} 
-                    alt={slide.title}
-                    className="w-full h-full object-cover max-h-[500px]"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-r from-black/10 to-transparent flex items-center px-16">
-                    <div className="max-w-xl">
-                        <h2 className="text-white text-3xl md:text-5xl font-extrabold leading-tight drop-shadow-xl">
-                        {slide.title}
-                        </h2>
-                        {/* <button className="mt-8 bg-black hover:opacity-80 text-white font-bold py-3.5 px-10 rounded-full transition-all transform hover:scale-105 shadow-2xl active:scale-95">
-                        Explorar
-                        </button> */}
+            <div className="relative rounded-[2rem] overflow-hidden shadow-2xl border border-white/10">
+                <Swiper
+                modules={[Pagination, Autoplay, Navigation]}
+                spaceBetween={0}
+                slidesPerView={1}
+                // navigation={true}
+                pagination={{ clickable: true }}
+                autoplay={{ delay: 5000, disableOnInteraction: false }}
+                loop={true}
+                style={{
+                    "--swiper-pagination-color": "#000",
+                }}
+                className="w-full h-auto"
+                >
+                {slides.map((slide) => (
+                    <SwiperSlide key={slide.id}>
+                    <div className="relative w-full h-full">
+                        <img 
+                        src={slide.img} 
+                        alt={slide.title}
+                        className="w-full h-full object-cover max-h-[500px]"
+                        />
+                        <div className="absolute inset-0 bg-gradient-to-r from-black/10 to-transparent flex items-center px-16">
+                        <div className="max-w-xl">
+                            <h2 className="text-white text-3xl md:text-5xl font-extrabold leading-tight drop-shadow-xl">
+                            {slide.title}
+                            </h2>
+                            {/* <button className="mt-8 bg-black hover:opacity-80 text-white font-bold py-3.5 px-10 rounded-full transition-all transform hover:scale-105 shadow-2xl active:scale-95">
+                            Explorar
+                            </button> */}
+                        </div>
+                        </div>
                     </div>
-                    </div>
-                </div>
-                </SwiperSlide>
-            ))}
+                    </SwiperSlide>
+                ))}
 
-            <SwiperNavButtons />
-            </Swiper>
-        </div>
+                <SwiperNavButtons />
+                </Swiper>
+            </div>
         </div>
     );
 };
