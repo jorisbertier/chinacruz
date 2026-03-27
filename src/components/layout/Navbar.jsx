@@ -291,21 +291,40 @@ const Navbar = () => {
                                                 <Search className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400" size={18} />
                                             </div>
                                         </div>
-
-                                        <button 
-                                            onClick={() => setMobileStep('categories')} 
-                                            className="flex items-center justify-between cursor-pointer px-6 py-5 border-b border-gray-50 font-black text-gray-800 uppercase text-[12px] tracking-widest active:bg-orange-50"
-                                        >
-                                            <span className="flex items-center gap-3"><Menu size={18} className="text-orange-cruz"/> Categorías</span>
-                                            <ChevronRight size={18} className="text-gray-300" />
-                                        </button>
-                                        
-                                        <Link to="/sucursales" className="flex items-center gap-3 px-6 py-5 border-b border-gray-50 font-black text-gray-800 uppercase text-[12px] tracking-widest">
-                                            <MapPin size={18} className="text-orange-cruz"/> Sucursales
-                                        </Link>
-                                        <Link to="/contact" className="flex items-center gap-3 px-6 py-5 border-b border-gray-50 font-black text-gray-800 uppercase text-[12px] tracking-widest">
-                                            <MessageSquare size={18} className="text-orange-cruz"/> Contacto
-                                        </Link>
+                                        {searchResults.map((product) => (
+                                                <button 
+                                                    key={product.product_code} 
+                                                    onClick={() => handleSelectProduct(product.product_code)}
+                                                    className="w-full flex items-center gap-4 px-4 py-3 hover:bg-orange-50 transition-colors text-left group/item"
+                                                >
+                                                    <div className="relative w-12 h-12 rounded-lg overflow-hidden border border-gray-100">
+                                                        <img src={product.images[0]} alt="" className="w-full h-full object-cover group-hover/item:scale-110 transition-transform duration-500" />
+                                                    </div>
+                                                    <div className="flex flex-col">
+                                                        <span className="text-sm font-bold text-gray-800 group-hover/item:text-orange-cruz transition-colors">{product.name}</span>
+                                                        <span className="text-[10px] text-gray-400 font-medium uppercase">{product.category}</span>
+                                                    </div>
+                                                    <ChevronRight size={14} className="ml-auto text-gray-300 opacity-0 group-hover/item:opacity-100 transition-all transform translate-x-[-10px] group-hover/item:translate-x-0" />
+                                                </button>
+                                            ))}
+                                        {!searchTerm && (
+                                        <>
+                                            <button 
+                                                onClick={() => setMobileStep('categories')} 
+                                                className="flex items-center justify-between cursor-pointer px-6 py-5 border-b border-gray-50 font-black text-gray-800 uppercase text-[12px] tracking-widest active:bg-orange-50"
+                                            >
+                                                <span className="flex items-center gap-3"><Menu size={18} className="text-orange-cruz"/> Categorías</span>
+                                                <ChevronRight size={18} className="text-gray-300" />
+                                            </button>
+                                            
+                                            <Link to="/sucursales" className="flex items-center gap-3 px-6 py-5 border-b border-gray-50 font-black text-gray-800 uppercase text-[12px] tracking-widest">
+                                                <MapPin size={18} className="text-orange-cruz"/> Sucursales
+                                            </Link>
+                                            <Link to="/contact" className="flex items-center gap-3 px-6 py-5 border-b border-gray-50 font-black text-gray-800 uppercase text-[12px] tracking-widest">
+                                                <MessageSquare size={18} className="text-orange-cruz"/> Contacto
+                                            </Link>
+                                        </>
+                                        )}
                                     </div>
                                 ) : (
                                     <motion.div 
