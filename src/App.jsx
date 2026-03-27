@@ -4,10 +4,11 @@ import Categories from './pages/Categories';
 import Contact from './pages/Contact';
 import Cart from './pages/Cart';
 import './App.css';
-import CategoryDetail from './pages/CategoryDetail';
+import ProductList from './pages/ProductList';
 import ScrollToTop from './components/ScrollTop';
 import { CartProvider } from './context/CartContext';
 import ProductDetail from './pages/ProductDetail';
+import SubCategories from './pages/SubCategories';
 
 function App() {
   return (
@@ -19,8 +20,10 @@ function App() {
 
             <Route path="/" element={<Categories />} />
             <Route path="/categories" element={<Categories />} />
-            <Route path="/categories/:categoryName" element={<CategoryDetail />} />
-            <Route path="/categories/:categoryName/:productCode" element={<ProductDetail />} />
+
+            <Route path="/categories/:categoryName" element={<SubCategories />} />
+            <Route path="/categories/:categoryName/:subCategoryName" element={<ProductList />} />
+            <Route path="/categories/:categoryName/:subCategoryName/:productCode" element={<ProductDetail />} />
             <Route path="/product/:productCode" element={<ProductDetail />} />
             <Route path="/cart" element={<Cart />} />
             <Route path="/contact" element={<Contact />} />

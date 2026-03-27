@@ -231,7 +231,7 @@ const Navbar = () => {
                                             {cat.subcategories.map((sub, sIdx) => (
                                                 <li key={sIdx}>
                                                     <Link 
-                                                        to={`/category/${cat.name}/${sub}`} 
+                                                        to={`/categories/${cat.name}/${sub}`} 
                                                         onClick={() => setActiveMegaMenu(false)}
                                                         className="text-gray-500 hover:text-orange-cruz text-[13px] font-medium transition-all hover:translate-x-1 inline-block"
                                                     >
@@ -272,7 +272,7 @@ const Navbar = () => {
                                 ) : (
                                     <span className="font-black italic tracking-tighter text-lg tracking-widest">MENU</span>
                                 )}
-                                <button onClick={() => {setIsOpen(false); setMobileStep('main');}} className="p-1.5 bg-white/20 rounded-full">
+                                <button onClick={() => {setIsOpen(false); setMobileStep('main');}} className="p-1.5 cursor-pointer bg-white/20 rounded-full">
                                     <X size={20}/>
                                 </button>
                             </div>
@@ -320,7 +320,7 @@ const Navbar = () => {
                                                 {cat.subcategories.map((sub, sIdx) => (
                                                     <Link 
                                                         key={sIdx} 
-                                                        to={`/category/${cat.name}/${sub}`} 
+                                                        to={`/categories/${cat.name}/${sub}`} 
                                                         onClick={() => setIsOpen(false)}
                                                         className="flex items-center justify-between px-8 py-4 active:bg-orange-50 border-b border-gray-50 last:border-0"
                                                     >

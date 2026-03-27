@@ -45,7 +45,7 @@ const BannerCarousel = () => {
     ];
 
     return (
-        <div className="w-full mx-auto mb-10">
+        <div className="w-full mx-auto mb-5 mt-12">
             <div className="relative rounded-[2rem] overflow-hidden shadow-2xl border border-white/10">
                 <Swiper
                 modules={[Pagination, Autoplay, Navigation]}
